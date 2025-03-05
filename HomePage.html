@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Recommendations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome Your Dream Destination</h1>
+        
+    </header>
+    <nav><ul>
+        <li><a href="">Home</a></li>
+        <li><a href="contactUs.html">Contact</a></li>
+        <li><a href="aboutUs.html">About</a></li>
+      </ul></nav>
+
+    <main>
+        <section id="filters">
+            <h2>Find Your Perfect Trip</h2>
+            <label for="destination">Destination:</label>
+            <input type="text" id="destination" placeholder="e.g., Paris">
+
+            <label for="budget">Budget:</label>
+            <select id="budget">
+                <option value="">Any</option>
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+
+            <label for="activity">Activity:</label>
+            <select id="activity">
+                <option value="">Any</option>
+                <option value="hiking">Hiking/Trekking</option>
+                <option value="beach">Beach/Relaxation</option>
+                <option value="city">City/Culture</option>
+            </select>
+
+            <button id="searchButton">Search</button>
+        </section>
+
+        <section id="results">
+            <h2>Recommended Destinations</h2>
+            <div id="recommendationsList">
+                </div>
+            <div id="destinationDetails" class="hidden">
+                <button id="closeDetails">Close</button>
+                <h3 id="detailsTitle"></h3>
+                <div id="detailsMedia"></div>
+                <p id="detailsDescription"></p>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
